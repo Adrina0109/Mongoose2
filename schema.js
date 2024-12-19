@@ -56,9 +56,9 @@ const postSchema=new mongoose.Schema({
         type:Date
     },
 
-    comments: [Blogcomments]
+    comments: [commentSchema]
 
     
 });
 
-module.exports= mongoose.model('Blog',BlogPosts);
+module.exports= mongoose.model('Blog',postSchema);
